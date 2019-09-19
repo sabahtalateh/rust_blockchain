@@ -88,9 +88,9 @@ fn read_u32(prompt: &str) -> u32 {
 }
 
 fn read_string(prompt: &str) -> String {
-    let mut miner_addr = String::new();
+    let mut string = String::new();
     print!("{}", prompt);
     io::stdout().flush().unwrap();
-    io::stdin().read_line(&mut miner_addr).unwrap();
-    miner_addr.trim().to_string()
+    io::stdin().read_line(&mut string).unwrap();
+    string.trim().to_string()
 }
